@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h> // For system function
+#include <stdlib.h> 
 
 int printJ[7][5];
 int printA[7][5];
 int printH[7][5];
 int printN[7][5];
-int printA1[7][5]; // Not used in current code
+int printA1[7][5]; 
 int printV[7][5];
 int printI[7][5];
 
@@ -60,7 +60,7 @@ void J() {
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 5; j++) {
             if (i == 0 || j == 3 || i == 6 && j != 4 || i == 4 && j != 1 && j != 2 && j != 4 || i == 5 && j != 1 && j != 2 && j != 4) {
-                printJ[i][j] = '*'; // Changed to '*' for clarity
+                printJ[i][j] = '*'; 
             } else {
                 printJ[i][j] = ' ';
             }
@@ -72,7 +72,7 @@ void A() {
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 5; j++) {
             if (((j == 0 || j == 4) && (i != 0)) || ((i == 0 || i == 3) && (j > 0 && j < 4))) {
-                printA[i][j] = '*'; // Changed to '*' for clarity
+                printA[i][j] = '*'; 
             } else {
                 printA[i][j] = ' ';
             }
@@ -84,7 +84,7 @@ void H() {
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 5; j++) {
             if (j == 0 || j == 4 || i == 3) {
-                printH[i][j] = '*'; // Changed to '*' for clarity
+                printH[i][j] = '*'; 
             } else {
                 printH[i][j] = ' ';
             }
@@ -96,7 +96,7 @@ void N() {
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 5; j++) {
             if (j == 0 || i == 0 && j == 0 || i == 1 && j == 1 || i == 2 && j == 2 || i == 3 && j == 3 || i == 4 && j == 4 || j == 4) {
-                printN[i][j] = '*'; // Changed to '*' for clarity
+                printN[i][j] = '*'; 
             } else {
                 printN[i][j] = ' ';
             }
@@ -108,7 +108,7 @@ void V() {
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 5; j++) {
             if (i == 0 && j != 1 && j != 2 && j != 3 || i == 1 && j != 1 && j != 2 && j != 3 || i == 2 && j != 1 && j != 2 && j != 3 || i == 3 && j != 1 && j != 2 && j != 3 || i == 4 && j != 1 && j != 2 && j != 3 || i == 5 && j != 0 && j != 2 && j != 4 || i == 6 && j != 0 && j != 1 && j != 3 && j != 4) {
-                printV[i][j] = '*'; // Changed to '*' for clarity
+                printV[i][j] = '*'; 
             } else {
                 printV[i][j] = ' ';
             }
@@ -120,7 +120,7 @@ void I() {
     for (int i = 0; i < 7; i++) {
         for (int j = 0; j < 5; j++) {
             if ((i == 0 || j == 2 || i == 6)) {
-                printI[i][j] = '*'; // Changed to '*' for clarity
+                printI[i][j] = '*'; 
             } else {
                 printI[i][j] = ' ';
             }
@@ -139,6 +139,6 @@ int main() {
 
     printConsole();
 
-    return 0; // Added to conform with main() returning int
+    return 0; 
 }
 
